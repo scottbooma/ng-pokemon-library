@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url("assets/pokemon-background.webp");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+header {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  max-height: 100%;
+}
+
+main {
+  background-color: antiquewhite;
+  border: 4px solid black;
+  border-radius: 6px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  max-height: 550px;
+}
