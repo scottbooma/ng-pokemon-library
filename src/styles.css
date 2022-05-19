@@ -1,3 +1,12 @@
+@font-face {
+  font-family: pkmn;
+  src: url("assets/PKMN.ttf");
+}
+
+* {
+  font-family: pkmn;
+}
+
 body {
   background-image: url("assets/pokemon-background.webp");
   background-size: 100%;
@@ -45,4 +54,40 @@ li {
 
 .pokemon-list p {
   margin: 0;
+}
+
+.pokemon-details {
+  margin-bottom: 48px;
+}
+
+.pokemon-details figure {
+  text-align: center;
+}
+
+.pokemon-details figcaption {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.pokemon-details img {
+  width: 150px;
+}
+
+.pokemon-details h2 {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 48px;
+}
+
+.abilities {
+  padding: 0;
+  text-align: center;
+}
+
+.pokemon-details span + span {
+  margin-left: 16px;
+}
+
+.ability-name {
+  font-weight: 600;
 }
