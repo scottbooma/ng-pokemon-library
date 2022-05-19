@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-
-type Pokemon = {
-  name: string;
-  imageUrl: string;
-};
+import { Pokemon, PokemonService } from '../pokemon.service';
 
 @Component({
   selector: 'app-pokemon-list',
@@ -11,112 +7,6 @@ type Pokemon = {
   styleUrls: ['./pokemon-list.component.css'],
 })
 export class PokemonListComponent {
-  pokemonList: Pokemon[] = [
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-  ];
-  constructor() {}
+  pokemonList: Pokemon[] = this.pokemonService.allPokemon;
+  constructor(private pokemonService: PokemonService) {}
 }
