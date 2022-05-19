@@ -24,3 +24,25 @@ main {
   overflow: auto;
   max-height: 550px;
 }
+
+li {
+  list-style: none;
+}
+
+.pokemon-list {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 40px;
+}
+
+.pokemon-list li {
+  padding: 0 16px 16px;
+  text-align: center;
+}
+
+.pokemon-list p {
+  margin: 0;
+}
