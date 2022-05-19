@@ -17,6 +17,7 @@ header {
   height: 150px;
   display: flex;
   justify-content: center;
+  margin-bottom: 24px;
 }
 
 header img {
@@ -77,6 +78,7 @@ li {
   font-weight: 600;
   text-align: center;
   margin-top: 48px;
+  margin-bottom: 24px;
 }
 
 .abilities {
@@ -90,4 +92,8 @@ li {
 
 .ability-name {
   font-weight: 600;
+}
+
+.abilities li + li {
+  margin-top: 16px;
 }
