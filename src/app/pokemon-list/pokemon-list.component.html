@@ -1,6 +1,6 @@
 <ul class="pokemon-list">
   <li *ngFor="let pokemon of pokemonList">
-    <a routerLink="/pokemon-display">
+    <a routerLink="/pokemon-display/{{ pokemon.name }}">
       <img
         src="{{ pokemon.sprites?.front_default }}"
         alt="{{ pokemon.name }}"

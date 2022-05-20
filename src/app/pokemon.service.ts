@@ -8,17 +8,22 @@ export type Pokemon = {
   sprites?: {
     front_default: string;
   };
+  abilities?: Ability[];
 };
 
 export type Ability = {
-  name: string;
-  description: string;
+  ability: {
+    name: string;
+    url: string;
+  };
 };
 
 export type PokemonDetail = {
   name: string;
-  imageUrl: string;
-  abilities: Ability[];
+  sprites?: {
+    front_default: string;
+  };
+  abilities?: Ability[];
 };
 
 export type PokemonResponse = {
@@ -62,112 +67,4 @@ export class PokemonService {
       },
     ],
   };
-
-  allPokemon: Pokemon[] = [
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-    {
-      name: 'Ditto',
-      imageUrl:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
-    },
-  ];
 }
